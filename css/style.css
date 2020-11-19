@@ -111,12 +111,15 @@
 }
 
 /* Section-Card */
+
 .section-card {
+    width: 100%;
     margin-top: 40px;
 }
 
 .section-card img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .section-card h2 {
