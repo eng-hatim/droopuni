@@ -1,7 +1,8 @@
 $(document).ready(function() {
-    $('#test, #play-icon').on('click', function(ev) {
+
+    $('#image-background, #play-icon').on('click', function(ev) {
         $("#video")[0].src += "?autoplay=1";
-        $('#test, #play-icon').remove();   
+        $('#image-background, #play-icon').remove();   
     });
 
     $('.owl-carousel').owlCarousel({
