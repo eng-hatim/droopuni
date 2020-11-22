@@ -29,10 +29,12 @@ $(document).ready(function() {
 
         for(i = 0; i < 1; i++) {
             $('#slide-content').animate({marginTop: '-='+'10px'},100).animate({marginTop: '+='+'10px'},100);
-        }        
+        }
 
         $('#slide-content').css('display', 'flex');
-    });    
+        $('#other-click #Polygon_9_js').toggleClass('Polygon_9_rotate');
+        
+    });
     
     
 
