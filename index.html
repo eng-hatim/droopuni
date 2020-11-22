@@ -14,9 +14,13 @@
 <body>
 
   <header>
+
+    <div class="container">
+      
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-      <button class="navbar-toggler nav-icon" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler nav-icon" type="button" data-toggle="collapse" data-target="#top-nav-collapse" aria-controls="top-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
         <img src="img/nav-icon.png" alt="nav-icon">
       </button>
   
@@ -28,33 +32,60 @@
         <img src="img/search.png" alt="search" title="بحث">
       </a>
   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+      <div class="collapse navbar-collapse" id="top-nav-collapse">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between" id="nav-icons">
+              <a href="#" data-toggle="collapse" data-target="#top-nav-collapse" aria-controls="top-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24.04" height="23.732" viewBox="0 0 24.04 23.732">
+                  <g id="Group_320" data-name="Group 320" transform="translate(-229.81 -274.358) rotate(45)">
+                    <path id="Path_265" data-name="Path 265" d="M12490.166,24.225h25.563" transform="translate(-12129.666 7.274)" fill="none" stroke="#f80" stroke-linecap="round" stroke-width="4"/>
+                    <path id="Path_266" data-name="Path 266" d="M12490.166,24.225h25.563" transform="translate(349.275 12534.229) rotate(-90)" fill="none" stroke="#f80" stroke-linecap="round" stroke-width="4"/>
+                  </g>
+                </svg>                
+              </a>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24.498" height="24.503" viewBox="0 0 24.498 24.503">
+                  <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M24.165,21.184l-4.771-4.771a1.148,1.148,0,0,0-.813-.335H17.8A9.949,9.949,0,1,0,16.078,17.8v.78a1.148,1.148,0,0,0,.335.813l4.771,4.771a1.144,1.144,0,0,0,1.622,0l1.354-1.354A1.154,1.154,0,0,0,24.165,21.184ZM9.953,16.078a6.125,6.125,0,1,1,6.125-6.125A6.122,6.122,0,0,1,9.953,16.078Z" fill="#f80"/>
+                </svg>                
+              </a>    
             </div>
+          </div>
+        </div>
+        
+        <ul class="navbar-nav mr-auto" id="center-links">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">الرئيسية</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#">التخصصات</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">الجامعات</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">الحياة الجامعية</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">المنح</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">دورات تدريبية</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">الإختبارات الشخصية</a>
+          </li>
+
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
       </div>
     </nav>
   
