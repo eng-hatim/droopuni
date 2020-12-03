@@ -889,4 +889,35 @@ footer p {
 
 #hover-background figure:hover .students-numbers span {
     color: #FFF !important;
-}  
+}
+
+#hover-background.majors-slide figure:hover h4 {
+    color: #FFF !important;
+}
+
+#hero-background.majors {
+    background-image: url('../img/ani-kolleshi-7jjnJ-QA9fY-unsplash.png');
+}
+
+.majors-slide span{
+    display: block;
+}
+
+.majors-slide .students-numbers a{
+    margin-right: 5px;
+}
+
+.majors-slide .text-desc h4 {
+    font-size: 22px !important;
+    color: #FF8800 !important;
+}
+
+.majors-slide .text-desc span {
+    font-size: 20px !important;
+    color: #FFFFFF !important;
+}
+
+.common-search.majors-slide .brand-img img {
+    width: 37px !important;
+    height: 37px !important;
+}

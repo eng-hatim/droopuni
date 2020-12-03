@@ -107,28 +107,34 @@
 
   </header>
 
-  <section id="hero-background" class="w-100">
+  <section id="dropdown-modal">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="hero-bg-text">
-            <h4>البحث بقائمة الجامعات الفلسطينية الموجودة</h4>
-            <form action="">
-              <div class="input-group mb-3 hero-search">
-                <input type="text" class="form-control" id="input-hero-search-text">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="input-hero-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21.417" height="21.417" viewBox="0 0 21.417 21.417">
-                      <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(1 1)">
-                        <path id="Path_240" data-name="Path 240" d="M21.391,12.946A8.446,8.446,0,1,1,12.946,4.5,8.446,8.446,0,0,1,21.391,12.946Z" transform="translate(-4.5 -4.5)" fill="none" stroke="#f80" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                        <path id="Path_241" data-name="Path 241" d="M29.567,29.567l-4.592-4.592" transform="translate(-10.565 -10.565)" fill="none" stroke="#f80" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-                      </g>
-                    </svg>                  
-                  </span>
-                </div>
-              </div>              
-            </form>
-          </div>
+        <div class="col-12" id="slideClick">
+          <a class="btn" id="other-click">
+            <div>
+              <svg id="Polygon_9_js" xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12">
+                <path id="Polygon_9" data-name="Polygon 9" d="M10,0,20,12H0Z" fill="#707070"/>
+              </svg>            
+              <span>أخرى</span>  
+            </div>
+          </a>
+            <ul class="slideDown nav nav-tabs" role="tablist" id="slide-content">
+
+            
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile">المنح والاعفاءات</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home-test">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#contact">النظام الاكاديمي</a>
+              </li>
+
+            </ul>
         </div>
       </div>
     </div>
@@ -136,121 +142,661 @@
 
   <section id="university">
     <div class="container">
-      <div class="row university-data">
-
-        <div class="col-12" id="definition">
-          <div class="info-title">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
-                <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
-              </svg>                  
+      <div class="row">
+        <div class="col-12 col-md-4" id="university-info">
+          <figure>
+            <img src="img/logo_up.png" alt="">
+            <div class="text-desc">
+              <h4>جامعة فلسطين</h4>
+              <span>غزة - الوسطى - مدينة الزهراء</span>
+              <span>2824123002+</span>
             </div>
-            <div class="title-section">
-              <span>الجامعات</span>
+            <div class="icons">
+              <a href="#" id="home" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33.399" height="25.972" viewBox="0 0 33.399 25.972">
+                  <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M16.256,8.991,5.566,17.8v9.5a.928.928,0,0,0,.928.928l6.5-.017a.928.928,0,0,0,.923-.928V21.732a.928.928,0,0,1,.928-.928h3.711a.928.928,0,0,1,.928.928v5.545a.928.928,0,0,0,.928.931l6.495.018a.928.928,0,0,0,.928-.928V17.789l-10.687-8.8A.707.707,0,0,0,16.256,8.991Zm16.885,5.984-4.847-4V2.949a.7.7,0,0,0-.7-.7H24.351a.7.7,0,0,0-.7.7v4.21L18.465,2.888a2.783,2.783,0,0,0-3.537,0L.251,14.975a.7.7,0,0,0-.093.98l1.478,1.8a.7.7,0,0,0,.98.095L16.256,6.614a.707.707,0,0,1,.887,0L30.781,17.847a.7.7,0,0,0,.98-.093l1.478-1.8a.7.7,0,0,0-.1-.982Z" transform="translate(0.001 -2.254)" fill="#fff"/>
+                </svg>                
+              </a>
+              <a href="#" id="facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.899" height="29.686" viewBox="0 0 15.899 29.686">
+                  <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M16.467,16.7l.824-5.372H12.136V7.839a2.686,2.686,0,0,1,3.029-2.9h2.344V.363A28.579,28.579,0,0,0,13.349,0C9.1,0,6.328,2.573,6.328,7.231v4.095H1.609V16.7H6.328V29.686h5.808V16.7Z" transform="translate(-1.609)" fill="#fff"/>
+                </svg>                
+              </a>
+              <a href="#" id="twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.686" height="24.11" viewBox="0 0 29.686 24.11">
+                  <path id="Icon_awesome-twitter" data-name="Icon awesome-twitter" d="M26.634,9.389c.019.264.019.527.019.791,0,8.043-6.122,17.31-17.31,17.31A17.193,17.193,0,0,1,0,24.76a12.585,12.585,0,0,0,1.469.075,12.185,12.185,0,0,0,7.553-2.6,6.1,6.1,0,0,1-5.689-4.219,7.672,7.672,0,0,0,1.149.094,6.435,6.435,0,0,0,1.6-.207,6.085,6.085,0,0,1-4.879-5.971v-.075a6.127,6.127,0,0,0,2.75.772A6.093,6.093,0,0,1,2.072,4.492a17.294,17.294,0,0,0,12.545,6.367,6.868,6.868,0,0,1-.151-1.394A6.09,6.09,0,0,1,25,5.3a11.978,11.978,0,0,0,3.861-1.469,6.068,6.068,0,0,1-2.675,3.353,12.2,12.2,0,0,0,3.5-.942,13.078,13.078,0,0,1-3.051,3.146Z" transform="translate(0 -3.381)" fill="#fff"/>
+                </svg>                
+              </a>
+              <a href="#" id="google">
+                <svg id="Icon_ionic-logo-googleplus" data-name="Icon ionic-logo-googleplus" xmlns="http://www.w3.org/2000/svg" width="29.686" height="18.901" viewBox="0 0 29.686 18.901">
+                  <path id="Path_166" data-name="Path 166" d="M18.449,14.534l-.093-.406H9.277v3.717h5.259a4.708,4.708,0,0,1-4.876,3.688A5.56,5.56,0,0,1,5.7,20.066a5.631,5.631,0,0,1-1.676-4.082,5.639,5.639,0,0,1,1.6-4.035,5.469,5.469,0,0,1,3.983-1.473A5.019,5.019,0,0,1,12.976,11.7l2.783-2.766A9.423,9.423,0,0,0,9.514,6.539h0A9.614,9.614,0,0,0,2.69,9.31,9.623,9.623,0,0,0,0,15.99a9.51,9.51,0,0,0,2.586,6.569A9.879,9.879,0,0,0,9.712,25.44a8.793,8.793,0,0,0,6.4-2.684,9.415,9.415,0,0,0,2.458-6.534A10.869,10.869,0,0,0,18.449,14.534Z" transform="translate(0 -6.539)" fill="#fff"/>
+                  <path id="Path_167" data-name="Path 167" d="M34.088,15.047h-3.3v-3.3H28.406v3.3H25.1v2.377h3.3v3.3h2.377v-3.3h3.3Z" transform="translate(-4.403 -7.452)" fill="#fff"/>
+                </svg>                
+              </a>
             </div>
-          </div>
-          <p>
-            كلمة جامعة هي كلمة مشتقة عربياً من كلمة الاجتماع أي الاجتماع حول هدف ألا وهو هدف التعليم والمعرفة، أي يمكننا القول إن "الجامعة هي مؤسسة للتعليم العالي والأبحاث، وهي تعطي شهادات أو إجازات أكاديمية لخريجيها. وهي توفر دراسة من المستوى الثالث والرابع (كاستكمال للدراسة المدرسة الابتدائية والثانوية). وكلمة جامعة مشتقة من كلمة الجمع والاجتماع، كما كلمة جامع، ففيها يجتمع الناس للعلم".
-          </p>
+          </figure>
         </div>
+        <div class="col-12 col-md-8 tab-content">
 
-        <div class="col-12">
-          <div class="info-title">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
-                <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
-              </svg>                  
+          <div class="row university-exams">
+            <div class="col-12 col-md-4 card-exam">
+              <div class="exam-header-card">
+                <img src="img/sas.png" alt="exam">
+              </div>
+              <div class="exam-card-footer">
+                <span>يتوفر لديها إختبار  SAS الدولي </span>
+              </div>
             </div>
-            <div class="title-section">
-              <span>الأكثر بحثاً</span>
+            <div class="col-12 col-md-4 card-exam">
+              <div class="exam-header-card">
+                <img src="img/iso.png" alt="exam">
+              </div>
+              <div class="exam-card-footer">
+                <span>معتمد من قبل ISO الدولية</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 card-exam">
+              <div class="exam-header-card">
+                <img src="img/pro.png" alt="exam">
+              </div>
+              <div class="exam-card-footer">
+                <span>منظومة تعليمية متكاملة و إحترافية</span>
+              </div>
             </div>
           </div>
 
-          <div class="owl-carousel owl-theme common-search">
+          <div class="row university-data tab-pane fade show active" id="home-test">
 
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4>جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
+            <div class="col-12" id="definition">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
+                    <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>1</span>
+                </div>
               </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
-              </div>
-            </figure>
+              <p>
+                جامعة فلسطين مؤسسة أكاديمية من مؤسسات التعليم العالي الفلسطينية تأسست من أجل خدمة أبناء الشعب الفلسطيني في الداخل والخارج بشكل خاص والطلبة العرب والأجانب بشكل عام.
 
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4> 1 جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
-              </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
-              </div>
-            </figure>
+تحمل جامعة فلسطين على عاتقها رسالة جليلة وهي توفير مستوى رفيع وعصري من التعليم الجامعي عن طريق تهيئة بيئة تعليمية تساندها تقنيات حديثة والكترونية متكاملة ومناهج وضوابط وأنظمة أكاديمية ذات مواصفات عالمية،كما تؤمّن الدعم والمساعدة للطلاب لضمان مستوى عالٍ من الإبداع والتميز، وتهتم بالبحث العلمي والمعرفي والتواصل مع حضارات وعلوم العالم، لترسيخ قيم المواطنة الصالحة والتعاون وإحترام الغير بما يحقق رفاهية وسعادة الإنسانية.
 
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4> 2 جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
+أسست جامعة فلسطين بمباركة من فخامة الرئيس الراحل ياسر عرفات – أبو عمار عام 2003، وبدأت ممارسة دورها في المجتمع الفلسطيني جنباً إلى جنب مع نظيراتها من الجامعات المحلية في أوائل شهر مارس من عام 2005 في مدينة غزة، وذلك بتجهيز ملفات اعتماد الكليات والبرامج. 
+
+وبمباركة من سيادة الرئيس محمود عباس تم تخصيص أرض للجامعة بمساحة 30 دونم في مدينة الزهراء وسط قطاع غزة، وبدأت الجامعة فور الحصول على الأرض بإنشاء مبانيها والإستقرار فيها. 
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="49.858" height="26.998" viewBox="0 0 49.858 26.998">
+                    <g id="eye" transform="translate(0)">
+                      <g id="Group_125" data-name="Group 125" transform="translate(0 0)">
+                        <path id="Path_228" data-name="Path 228" d="M49,117.137a37.232,37.232,0,0,0-6.658-6.2c-5.534-4.066-11.556-6.215-17.415-6.215s-11.88,2.149-17.415,6.215a37.237,37.237,0,0,0-6.658,6.2L0,118.22.856,119.3a37.241,37.241,0,0,0,6.658,6.2c5.535,4.066,11.556,6.215,17.415,6.215s11.88-2.149,17.414-6.215A37.231,37.231,0,0,0,49,119.3l.857-1.083Zm-24.072,10.54a9.461,9.461,0,0,1-9.157-11.823l-2.159-.363a11.632,11.632,0,0,0,3.41,11.264,30.647,30.647,0,0,1-7.361-4.007A36.69,36.69,0,0,1,4.55,118.22a36.7,36.7,0,0,1,5.112-4.527,30.651,30.651,0,0,1,7.361-4.007l1.448,1.633a9.455,9.455,0,1,1,6.458,16.358ZM40.2,122.747a30.653,30.653,0,0,1-7.361,4.007,11.621,11.621,0,0,0,0-17.068,30.655,30.655,0,0,1,7.361,4.007,36.7,36.7,0,0,1,5.112,4.527A36.677,36.677,0,0,1,40.2,122.747Z" transform="translate(0 -104.721)" fill="#fff"/>
+                        <path id="Path_229" data-name="Path 229" d="M171.028,175.209a6.3,6.3,0,1,0,1.659-2.7l3.1,3.5Z" transform="translate(-152.117 -163.548)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرؤية</span>
+                </div>
               </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
+              <p>
+                مؤسسة أكاديمية متميزة داعمة للتنمية المستدامة على المستوى الوطني وفق معايير الجودة .
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرسالة</span>
+                </div>
               </div>
-            </figure>
+              <p>
+                تسعى جامعة فلسطين للتميز في التدريس والبحث العلمي وخدمة المجتمع من خلال برامج مرتبطة بالتنمية المستدامة وتخريج أجيال محصنة بالقيم الأصيلة، وقادرة على مواكبة التطورات العلمية والتكنولوجية ومستجدات العصر، والمنافسة على المستويين المحلي والإقليمي.               </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>المدينة الجامعية</span>
+                </div>
+              </div>
+              <div id="iframe-card">
+                <figure>
+                  <div id="image-background"></div>
+                  <div id="play-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14.831" height="16.95" viewBox="0 0 14.831 16.95">
+                      <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M14.05,7.109,2.4.22A1.58,1.58,0,0,0,0,1.587V15.362a1.588,1.588,0,0,0,2.4,1.367L14.05,9.843a1.587,1.587,0,0,0,0-2.734Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>                    
+                  </div>
+                  <iframe id="video" width="100%" height="225" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+                </figure>
+                <p>
+                  <span id="star">*</span>
+                  جولة داخلية قصيرة داخل جامعة فلسطين و مرافقها للتعمق أكثر
+يمكنك الذهاب من خلال تعرف أكثر على يسار الشاشة
+                </p>
+              </div>
+              <div class="info-more">
+                <div class="learn-more">
+                  <a href="#" class="btn">
+                    تعرف أكثر
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.892" height="15.554" viewBox="0 0 8.892 15.554">
+                      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M13.931,13.969l5.885-5.881a1.112,1.112,0,0,0-1.574-1.57l-6.668,6.663a1.109,1.109,0,0,0-.032,1.533l6.7,6.709a1.112,1.112,0,1,0,1.574-1.57Z" transform="translate(-11.251 -6.194)" fill="#f80"/>
+                    </svg>                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>الهيئة الإدارية</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>قصص نجاح</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row university-data tab-pane fade" id="profile">
+
+            <div class="col-12" id="definition">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
+                    <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>المنح والاعفاءات</span>
+                </div>
+              </div>
+              <p>
+                جامعة فلسطين مؤسسة أكاديمية من مؤسسات التعليم العالي الفلسطينية تأسست من أجل خدمة أبناء الشعب الفلسطيني في الداخل والخارج بشكل خاص والطلبة العرب والأجانب بشكل عام.
+
+تحمل جامعة فلسطين على عاتقها رسالة جليلة وهي توفير مستوى رفيع وعصري من التعليم الجامعي عن طريق تهيئة بيئة تعليمية تساندها تقنيات حديثة والكترونية متكاملة ومناهج وضوابط وأنظمة أكاديمية ذات مواصفات عالمية،كما تؤمّن الدعم والمساعدة للطلاب لضمان مستوى عالٍ من الإبداع والتميز، وتهتم بالبحث العلمي والمعرفي والتواصل مع حضارات وعلوم العالم، لترسيخ قيم المواطنة الصالحة والتعاون وإحترام الغير بما يحقق رفاهية وسعادة الإنسانية.
+
+أسست جامعة فلسطين بمباركة من فخامة الرئيس الراحل ياسر عرفات – أبو عمار عام 2003، وبدأت ممارسة دورها في المجتمع الفلسطيني جنباً إلى جنب مع نظيراتها من الجامعات المحلية في أوائل شهر مارس من عام 2005 في مدينة غزة، وذلك بتجهيز ملفات اعتماد الكليات والبرامج. 
+
+وبمباركة من سيادة الرئيس محمود عباس تم تخصيص أرض للجامعة بمساحة 30 دونم في مدينة الزهراء وسط قطاع غزة، وبدأت الجامعة فور الحصول على الأرض بإنشاء مبانيها والإستقرار فيها. 
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="49.858" height="26.998" viewBox="0 0 49.858 26.998">
+                    <g id="eye" transform="translate(0)">
+                      <g id="Group_125" data-name="Group 125" transform="translate(0 0)">
+                        <path id="Path_228" data-name="Path 228" d="M49,117.137a37.232,37.232,0,0,0-6.658-6.2c-5.534-4.066-11.556-6.215-17.415-6.215s-11.88,2.149-17.415,6.215a37.237,37.237,0,0,0-6.658,6.2L0,118.22.856,119.3a37.241,37.241,0,0,0,6.658,6.2c5.535,4.066,11.556,6.215,17.415,6.215s11.88-2.149,17.414-6.215A37.231,37.231,0,0,0,49,119.3l.857-1.083Zm-24.072,10.54a9.461,9.461,0,0,1-9.157-11.823l-2.159-.363a11.632,11.632,0,0,0,3.41,11.264,30.647,30.647,0,0,1-7.361-4.007A36.69,36.69,0,0,1,4.55,118.22a36.7,36.7,0,0,1,5.112-4.527,30.651,30.651,0,0,1,7.361-4.007l1.448,1.633a9.455,9.455,0,1,1,6.458,16.358ZM40.2,122.747a30.653,30.653,0,0,1-7.361,4.007,11.621,11.621,0,0,0,0-17.068,30.655,30.655,0,0,1,7.361,4.007,36.7,36.7,0,0,1,5.112,4.527A36.677,36.677,0,0,1,40.2,122.747Z" transform="translate(0 -104.721)" fill="#fff"/>
+                        <path id="Path_229" data-name="Path 229" d="M171.028,175.209a6.3,6.3,0,1,0,1.659-2.7l3.1,3.5Z" transform="translate(-152.117 -163.548)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرؤية</span>
+                </div>
+              </div>
+              <p>
+                مؤسسة أكاديمية متميزة داعمة للتنمية المستدامة على المستوى الوطني وفق معايير الجودة .
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرسالة</span>
+                </div>
+              </div>
+              <p>
+                تسعى جامعة فلسطين للتميز في التدريس والبحث العلمي وخدمة المجتمع من خلال برامج مرتبطة بالتنمية المستدامة وتخريج أجيال محصنة بالقيم الأصيلة، وقادرة على مواكبة التطورات العلمية والتكنولوجية ومستجدات العصر، والمنافسة على المستويين المحلي والإقليمي.               </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>المدينة الجامعية</span>
+                </div>
+              </div>
+              <div id="iframe-card">
+                <figure>
+                  <div id="image-background"></div>
+                  <div id="play-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14.831" height="16.95" viewBox="0 0 14.831 16.95">
+                      <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M14.05,7.109,2.4.22A1.58,1.58,0,0,0,0,1.587V15.362a1.588,1.588,0,0,0,2.4,1.367L14.05,9.843a1.587,1.587,0,0,0,0-2.734Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>                    
+                  </div>
+                  <iframe id="video" width="100%" height="225" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+                </figure>
+                <p>
+                  <span id="star">*</span>
+                  جولة داخلية قصيرة داخل جامعة فلسطين و مرافقها للتعمق أكثر
+يمكنك الذهاب من خلال تعرف أكثر على يسار الشاشة
+                </p>
+              </div>
+              <div class="info-more">
+                <div class="learn-more">
+                  <a href="#" class="btn">
+                    تعرف أكثر
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.892" height="15.554" viewBox="0 0 8.892 15.554">
+                      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M13.931,13.969l5.885-5.881a1.112,1.112,0,0,0-1.574-1.57l-6.668,6.663a1.109,1.109,0,0,0-.032,1.533l6.7,6.709a1.112,1.112,0,1,0,1.574-1.57Z" transform="translate(-11.251 -6.194)" fill="#f80"/>
+                    </svg>                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>الهيئة الإدارية</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>قصص نجاح</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row university-data tab-pane fade" id="contact">
+
+            <div class="col-12" id="definition">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
+                    <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>النظام ابلاكاديمي</span>
+                </div>
+              </div>
+              <p>
+                جامعة فلسطين مؤسسة أكاديمية من مؤسسات التعليم العالي الفلسطينية تأسست من أجل خدمة أبناء الشعب الفلسطيني في الداخل والخارج بشكل خاص والطلبة العرب والأجانب بشكل عام.
+
+تحمل جامعة فلسطين على عاتقها رسالة جليلة وهي توفير مستوى رفيع وعصري من التعليم الجامعي عن طريق تهيئة بيئة تعليمية تساندها تقنيات حديثة والكترونية متكاملة ومناهج وضوابط وأنظمة أكاديمية ذات مواصفات عالمية،كما تؤمّن الدعم والمساعدة للطلاب لضمان مستوى عالٍ من الإبداع والتميز، وتهتم بالبحث العلمي والمعرفي والتواصل مع حضارات وعلوم العالم، لترسيخ قيم المواطنة الصالحة والتعاون وإحترام الغير بما يحقق رفاهية وسعادة الإنسانية.
+
+أسست جامعة فلسطين بمباركة من فخامة الرئيس الراحل ياسر عرفات – أبو عمار عام 2003، وبدأت ممارسة دورها في المجتمع الفلسطيني جنباً إلى جنب مع نظيراتها من الجامعات المحلية في أوائل شهر مارس من عام 2005 في مدينة غزة، وذلك بتجهيز ملفات اعتماد الكليات والبرامج. 
+
+وبمباركة من سيادة الرئيس محمود عباس تم تخصيص أرض للجامعة بمساحة 30 دونم في مدينة الزهراء وسط قطاع غزة، وبدأت الجامعة فور الحصول على الأرض بإنشاء مبانيها والإستقرار فيها. 
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="49.858" height="26.998" viewBox="0 0 49.858 26.998">
+                    <g id="eye" transform="translate(0)">
+                      <g id="Group_125" data-name="Group 125" transform="translate(0 0)">
+                        <path id="Path_228" data-name="Path 228" d="M49,117.137a37.232,37.232,0,0,0-6.658-6.2c-5.534-4.066-11.556-6.215-17.415-6.215s-11.88,2.149-17.415,6.215a37.237,37.237,0,0,0-6.658,6.2L0,118.22.856,119.3a37.241,37.241,0,0,0,6.658,6.2c5.535,4.066,11.556,6.215,17.415,6.215s11.88-2.149,17.414-6.215A37.231,37.231,0,0,0,49,119.3l.857-1.083Zm-24.072,10.54a9.461,9.461,0,0,1-9.157-11.823l-2.159-.363a11.632,11.632,0,0,0,3.41,11.264,30.647,30.647,0,0,1-7.361-4.007A36.69,36.69,0,0,1,4.55,118.22a36.7,36.7,0,0,1,5.112-4.527,30.651,30.651,0,0,1,7.361-4.007l1.448,1.633a9.455,9.455,0,1,1,6.458,16.358ZM40.2,122.747a30.653,30.653,0,0,1-7.361,4.007,11.621,11.621,0,0,0,0-17.068,30.655,30.655,0,0,1,7.361,4.007,36.7,36.7,0,0,1,5.112,4.527A36.677,36.677,0,0,1,40.2,122.747Z" transform="translate(0 -104.721)" fill="#fff"/>
+                        <path id="Path_229" data-name="Path 229" d="M171.028,175.209a6.3,6.3,0,1,0,1.659-2.7l3.1,3.5Z" transform="translate(-152.117 -163.548)" fill="#fff"/>
+                      </g>
+                    </g>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرؤية</span>
+                </div>
+              </div>
+              <p>
+                مؤسسة أكاديمية متميزة داعمة للتنمية المستدامة على المستوى الوطني وفق معايير الجودة .
+              </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>الرسالة</span>
+                </div>
+              </div>
+              <p>
+                تسعى جامعة فلسطين للتميز في التدريس والبحث العلمي وخدمة المجتمع من خلال برامج مرتبطة بالتنمية المستدامة وتخريج أجيال محصنة بالقيم الأصيلة، وقادرة على مواكبة التطورات العلمية والتكنولوجية ومستجدات العصر، والمنافسة على المستويين المحلي والإقليمي.               </p>
+            </div>
+
+            <div class="col-12">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36.027" height="30.271" viewBox="0 0 36.027 30.271">
+                    <path id="mission_1_" data-name="mission (1)" d="M22.713,24.949a.9.9,0,0,0-.9-.9H12.308a.9.9,0,0,0-.9.9v5.707a.9.9,0,0,0,.9.9h8.611v2.535L12.308,42.7,10.09,40.483a.9.9,0,0,0-1.372.122L.161,52.912A.9.9,0,0,0,.9,54.322H35.13a.9.9,0,0,0,.7-1.461L22.713,34.176Zm-9.508,4.809V25.846h7.713v3.912ZM2.615,52.527,9.579,42.511l2.094,2.095a.9.9,0,0,0,1.27,0L21.7,35.85,33.4,52.527H2.615Z" transform="translate(0 -24.051)" fill="#fff"/>
+                  </svg>                  
+                </div>
+                <div class="title-section">
+                  <span>المدينة الجامعية</span>
+                </div>
+              </div>
+              <div id="iframe-card">
+                <figure>
+                  <div id="image-background"></div>
+                  <div id="play-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14.831" height="16.95" viewBox="0 0 14.831 16.95">
+                      <path id="Icon_awesome-play" data-name="Icon awesome-play" d="M14.05,7.109,2.4.22A1.58,1.58,0,0,0,0,1.587V15.362a1.588,1.588,0,0,0,2.4,1.367L14.05,9.843a1.587,1.587,0,0,0,0-2.734Z" transform="translate(0 -0.002)" fill="#fff"/>
+                    </svg>                    
+                  </div>
+                  <iframe id="video" width="100%" height="225" src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0" frameborder="0" allowtransparency="true" allowfullscreen></iframe>
+                </figure>
+                <p>
+                  <span id="star">*</span>
+                  جولة داخلية قصيرة داخل جامعة فلسطين و مرافقها للتعمق أكثر
+يمكنك الذهاب من خلال تعرف أكثر على يسار الشاشة
+                </p>
+              </div>
+              <div class="info-more">
+                <div class="learn-more">
+                  <a href="#" class="btn">
+                    تعرف أكثر
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#" class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.892" height="15.554" viewBox="0 0 8.892 15.554">
+                      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M13.931,13.969l5.885-5.881a1.112,1.112,0,0,0-1.574-1.57l-6.668,6.663a1.109,1.109,0,0,0-.032,1.533l6.7,6.709a1.112,1.112,0,1,0,1.574-1.57Z" transform="translate(-11.251 -6.194)" fill="#f80"/>
+                    </svg>                    
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>الهيئة الإدارية</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
+            <div class="col-12 slider-section">
+              <div class="info-title">
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32.167" height="32.164" viewBox="0 0 32.167 32.164">
+                    <path id="Icon_awesome-horse-head" data-name="Icon awesome-horse-head" d="M32.03,20.891,27.638,10.568A7.761,7.761,0,0,0,21.8,5.592,4.393,4.393,0,0,0,23.944.421.584.584,0,0,0,23.19.038l-12.7,4.756C2.256,7.753,0,15.01,0,25.056v5.1a2.008,2.008,0,0,0,2.011,2.011h14.84a2.007,2.007,0,0,0,1.8-2.909l-2.563-5.133v-.044A8.029,8.029,0,0,1,9.531,19.71a.5.5,0,0,1,.1-.584l.76-.76a.5.5,0,0,1,.81.151,6,6,0,0,0,5.491,3.606,5.781,5.781,0,0,0,2.94-.829l2.89,4.015a2,2,0,0,0,1.634.836h3.16a2.007,2.007,0,0,0,1.42-.591l2.846-2.5a2.039,2.039,0,0,0,.446-2.161ZM20.608,14.074a1.508,1.508,0,1,1,1.508-1.508A1.5,1.5,0,0,1,20.608,14.074Z" transform="translate(0 -0.004)" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="title-section">
+                  <span>قصص نجاح</span>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme photo-slider">
+                <div class="item">
+                  <figure>
+                    <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/WhatsApp Image 2020-11-12 at 8.11.22 PM.jpeg" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/victoria-heath-b7CRDcwfNFU-unsplash.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="img/maxresdefault.png" alt="">
+                  </figure>
+                  <h4>م. حاتم حسين</h4>
+                  <span>المدير التقني</span>
+                </div>
+              </div>
+              <div class="btn-more">
+                <a href="#" class="btn">المزيد</a>
+              </div>
+            </div>
+
           </div>
 
         </div>
-
-        <div class="col-12">
-          <div class="info-title">
-            <div class="icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32.02" height="36.594" viewBox="0 0 32.02 36.594">
-                <path id="Icon_awesome-building" data-name="Icon awesome-building" d="M31.163,34.307H29.733V1.715A1.715,1.715,0,0,0,28.018,0H4A1.715,1.715,0,0,0,2.287,1.715V34.307H.858A.858.858,0,0,0,0,35.165v1.429H32.02V35.165A.858.858,0,0,0,31.163,34.307ZM9.149,5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858V8.291a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm0,6.861a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859a.858.858,0,0,1-.858.858H10.006a.858.858,0,0,1-.858-.858Zm3.717,10.578H10.006a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858v2.859A.858.858,0,0,1,12.865,22.872ZM18.3,34.307H13.723v-6a.858.858,0,0,1,.858-.858H17.44a.858.858,0,0,1,.858.858Zm4.574-12.293a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V19.155a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V12.293a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Zm0-6.861a.858.858,0,0,1-.858.858H19.155a.858.858,0,0,1-.858-.858V5.432a.858.858,0,0,1,.858-.858h2.859a.858.858,0,0,1,.858.858Z" fill="#fff"/>
-              </svg>                  
-            </div>
-            <div class="title-section">
-              <span>الأكثر بحثاً</span>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme common-search" id="hover-background">
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4>جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
-              </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
-              </div>
-            </figure>
-
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4> 1 جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
-              </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
-              </div>
-            </figure>
-
-            <figure class="university-item">
-              <img src="img/logo_up.png" alt="">
-              <div class="text-desc">
-                <h4> 2 جامعة فلسطين</h4>
-                <span>النوع: خاصة</span>
-              </div>
-              <div class="text-desc students-numbers">
-                <span>عدد الطلاب: 6000</span>
-              </div>
-            </figure>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>

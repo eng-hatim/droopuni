@@ -70,9 +70,10 @@ $(document).ready(function() {
         $('#input-hero-search-text').hide();
       });
 
-      $('#hover-background figure').hover(function () {
-        $('.common-search .owl-item .university-item img').css('visibility', 'hidden');
-      });
+    //   Hover on Slide images (Universities/Majors)
+    // $('#hover-background figure').hover(function () {
+    //     $('.common-search .owl-item .university-item img').css('visibility', 'hidden');
+    // });
 
 
 
