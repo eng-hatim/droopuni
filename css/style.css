@@ -1089,3 +1089,169 @@ footer p {
     font-size: 23px;
     margin-right: 2px;
 }
+
+/* major-course-card */
+
+#university #major-courses {
+    background-image: url('../img/web-logo-student.png');
+    padding-bottom: 0 !important;
+    padding-top: 40px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    height: 636px !important;
+}
+
+#university #major-courses .info-title {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 43px !important;
+}
+
+.major-course-card {
+    border-radius: 28px !important;
+    background-color: #FFFFFF !important;
+    overflow: hidden;
+}
+
+.major-course-card .major-course-card-header {
+    background-color: #A6DDE2;
+    background-image: url('../img/web-course.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 230px !important;
+    overflow: hidden;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+
+.major-course-card .major-course-card-header .course-teacher {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.major-course-card .major-course-card-header .course-teacher .teacher-image {
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 10px;
+    overflow: hidden;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #0088CC;
+}
+
+.major-course-card .major-course-card-header .course-teacher .teacher-image img {
+    height: 100%;
+    width: auto !important;
+}
+
+.major-course-card .major-course-card-header .course-teacher span {
+    color: #0088CC;
+    font-size: 18px;
+}
+
+.major-course-card .major-course-card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 112px;
+}
+
+.major-course-card .major-course-card-footer .stars {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.major-course-card .major-course-card-footer .course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.major-course-card .major-course-card-footer .course-details .enroll-now {
+    background: #0088CC;
+    width: 60%;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    padding: 10px;
+    text-align: center;
+}
+
+.major-course-card .major-course-card-footer .course-details .enroll-now a {
+    color: #FFFFFF;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.course-duration {
+    width: 40%;
+    text-align: center;
+}
+
+.course-title {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.course-title h4,
+.course-duration span {
+    font-size: 22px;
+}
+
+.course-duration span,
+.course-duration .fa-clock {
+    color: #0088CC;
+}
+
+.course-duration .fa-clock {
+    font-size: 30px;
+    vertical-align: sub;
+}
+
+#university #major-courses .owl-carousel .owl-item{
+    margin-left: 25px !important;
+}
+
+.apportunity-work {
+    position: relative;
+}
+
+.slide-apportunity {
+    background-color: #0088CC;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: -100%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-apportunity span {
+    color: #FFFFFF !important;
+    font-size: 22px !important;
+    text-decoration: underline;
+}
+
+.apportunity-work:hover {
+    background-color: #0088CC;
+    transition: 1s;
+}
+
+.apportunity-work:hover .slide-apportunity {
+    transition: 0.5s;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
