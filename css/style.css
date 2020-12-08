@@ -19,6 +19,10 @@
     /* font-family: 'JF-Medium' !important; */
 }
 
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
 .nav-icon {
     border: 0 !important;
 }
@@ -526,13 +530,13 @@ footer p {
     padding-right: 45px !important;
 }
 
-#university .info-title {
+.info-title {
     display: flex;
     align-items: center;
     margin-bottom: 15px !important;
 }
 
-#university .info-title .icon {
+.info-title .icon {
     background-color: #FF8800;
     width: 57px;
     height: 57px;
@@ -542,11 +546,11 @@ footer p {
     border-radius: 5px;
 }
 
-#university .info-title .title-section {
+.info-title .title-section {
     margin-right: 8px;
     background-color: #FFFFFF;
     color: #FF8800;
-    font-size: 28px;
+    font-size: 26px;
     height: 57px;
     padding: 17px;
     display: flex;
@@ -665,10 +669,14 @@ footer p {
     height: 152px !important;
     border: solid 3px #7D44D2;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .owl-carousel.photo-slider figure img {
     height: 100%;
+    width: auto !important;
 }
 
 .owl-carousel.photo-slider .item {
@@ -681,6 +689,7 @@ footer p {
 .owl-carousel .item h4 {
     color: #FF8800;
     font-size: 22px;
+    text-align: center;
 }
 
 .owl-carousel .item span {
@@ -870,7 +879,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99999;
+    z-index: 99;
 }
 
 #input-hero-search-text {
@@ -920,4 +929,163 @@ footer p {
 .common-search.majors-slide .brand-img img {
     width: 37px !important;
     height: 37px !important;
+}
+
+#university.university-majors .info-title {
+    margin-bottom: 42px !important;
+}
+
+/* Accept Test */
+
+#hero-background.accept-test {
+    background-image: url('../img/csm_Islamic_University_of_Gaza_0cc95e2396.png') !important;
+    margin-bottom: 50px !important;
+}
+
+.test-card {
+    margin-bottom: 68px !important;
+}
+
+.test-card .title-section span {
+    font-size: 26px !important;
+}
+
+.test-card figure {
+    border: 2px solid #FF8800;
+    border-radius: 10px;
+    height: 304px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #CECDCD;
+    margin-bottom: 41px !important;
+}
+
+.test-card figure img {
+    height: 100%;
+}
+
+.test-card .info-title {
+    margin-bottom: 57px !important;
+}
+
+.test-card .info-more {
+    margin-top: 60px !important;
+}
+
+.test-card .info-more .learn-more {
+    background-color: #FFFFFF !important;
+    border-radius: 5px !important;
+}
+
+.test-card .info-more .learn-more a {
+    color: #FF8800 !important;
+    font-size: 28px !important;
+}
+
+.test-card .info-more .icon {
+    background-color: #FF8800 !important;
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+}
+
+.test-card .info-more .icon svg {
+    height: 23.62px !important;
+    width: 13.5px !important;
+}
+
+.test-card .info-more .icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-card p {
+    font-size: 18px !important;
+    color: #707070 !important;
+    text-align: center;
+}
+
+/* Majors-single-page */
+
+#university.majors-single-page #university-info figure {
+    background-size: auto !important;
+}
+
+#university.majors-single-page #university-info figure .logo-img {
+    width: 170px;
+    height: 169px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#university.majors-single-page #university-info figure .logo-img img {
+    height: 100%;
+}
+
+#university.majors-single-page .brand-img {
+    width: auto !important;
+    height: auto !important;
+    margin-right: 8px !important;
+}
+
+#university.majors-single-page .info-title .title-section {
+    color: #0088CC !important;
+}
+
+#university.majors-single-page .info-title .icon {
+    background-color: #0088CC !important;
+}
+
+.majors-single-page #compare-majors #definition {
+    padding-bottom: 0 !important;
+}
+
+.majors-single-page #compare-majors .common-search .university-item {
+    justify-content: center !important;
+}
+
+.majors-single-page #compare-majors .common-search .university-item img {
+    margin-bottom: 20px !important;
+}
+
+.majors-single-page #compare-majors .photo-slider::after {
+    content: '' !important;
+    background: none !important;
+    display: none !important;
+}
+
+.majors-single-page #compare-majors .owl-carousel.photo-slider figure {
+    padding: 5px !important;
+    border-color: #0088CC !important;
+}
+
+.majors-single-page #compare-majors .owl-carousel .item h4 {
+    color: #0088CC !important;
+    font-size: 28px !important;
+}
+ 
+.majors-single-page #compare-majors #common-people .owl-carousel .item h4 {
+    font-size: 22px !important;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: .5rem;
+}
+
+.stars .fa-star,
+.stars .fa-star-half {
+    color: #0088CC !important;
+    font-size: 23px;
+    margin-right: 2px;
 }
