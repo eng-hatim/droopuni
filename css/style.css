@@ -114,6 +114,18 @@
     padding-left: 20px;
 }
 
+.btn-primary {
+    background-color: #FF8800 !important;
+    color: #FFFFFF !important;
+    border-color: #FF8800;
+}
+
+.btn-info {
+    background-color: #FFFFFF !important;
+    color: #FF8800 !important;
+    border-color: #FFFFFF;
+}
+
 /* top-nav-collapse */
 
 #top-nav-collapse {
@@ -1255,3 +1267,115 @@ footer p {
     bottom: 0;
 }
 
+/* shcolarships */
+
+#shcolarships-types #myTab.nav-tabs {
+    border-bottom: 4px solid #FE8700;
+}
+
+#shcolarships-types #myTab .nav-item {
+    padding: 0;
+}
+
+#shcolarships-types #myTab .nav-item:last-child {
+    margin-bottom: -4px !important;
+}
+
+#shcolarships-types #myTab .nav-item .nav-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 28px !important;
+    color: #707070;
+    padding: 20px;
+}
+
+#shcolarships-types #myTab .nav-item .active {
+    background-color: #FE8700 !important;
+    color: #FFFFFF !important;
+}
+
+#shcolarships-types #myTab .nav-item .nav-link h2 {
+      width: 90%;
+      text-align: center;
+      font-size: 28px;
+}
+
+#shcolarships-types #myTab .nav-item .nav-link svg {
+    width: 10%;
+    text-align: center;
+}
+
+#shcolarships-types #myTab .nav-item .nav-link svg path  {
+    fill: #707070 !important;
+}
+
+#shcolarships-types #myTab .nav-item .nav-link.active svg path  {
+    fill: #FFFFFF !important;
+}
+
+#shcolarships-details .shcolarships-note {
+    font-size: 31px;
+    color: #000000;
+    margin-bottom: 53px;
+    margin-top: 25px;
+}
+
+#shcolarships-details figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16) !important;
+    -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16) !important;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16) !important;
+}
+
+#shcolarships-details figure p {
+    position: absolute;
+    font-size: 18px;
+    color: #FF8800;
+    text-align: center;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 15px;
+    padding-left: 21px;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 29px;
+}
+
+#shcolarships-details figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#shcolarships-details .shcolarships-description {
+    margin-bottom: 74px;
+}
+
+#shcolarships-details .shcolarships-description p {
+    font-size: 22px;
+    color: #000000;
+}
+
+#shcolarships-details .shcolarships-description .shcolarships-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 127px;
+}
+
+#shcolarships-details .shcolarships-description .shcolarships-buttons .btn-primary {
+    width: 59%;
+    border-radius: 10px !important;
+    padding: 15px;
+    font-size: 26px;
+}
+
+#shcolarships-details .shcolarships-description .shcolarships-buttons .btn-info {
+    width: 39%;
+    border-radius: 10px !important;
+    padding: 15px;
+    font-size: 26px;
+}
